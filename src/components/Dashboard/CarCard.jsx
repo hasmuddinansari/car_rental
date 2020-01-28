@@ -3,9 +3,10 @@ import {Link} from "react-router-dom"
 
 export default function CarCard({car, match}) {
     return (
-        <div className="card m-2 col-md-3 bg-light border border-dark col-12">
+        <div className="col-lg-4 col-md-6 my-2 col-12 ">
+            <div className="card col-12">
             <div className="card-body">
-                <img src={car.img} alt="" className="img-fluid"/>
+                <img src={car.img} alt="" className="img-fluid img-resize"/>
                 <ul className="list-group">
                     <li className="list-group-item bg-dark text-white">
                         Car Model : {car.car_model}
@@ -28,6 +29,7 @@ export default function CarCard({car, match}) {
            
             </div>
             
+        </div>
         </div>
     )
 }

@@ -1,10 +1,6 @@
   /* body {
     background:lightblue
   } */
-
-  .img-resize{
-    width:25rem;
-  }
   .form-control {
     border-radius:20px;
   }
@@ -13,10 +9,11 @@
     height:100vh;
   }
   .dash-bg {
+    
     background: #3D7EAA;  /* fallback for old browsers */
     background: -webkit-linear-gradient(to right, #FFE47A, #3D7EAA);  /* Chrome 10-25, Safari 5.1-6 */
     background: linear-gradient(to right, #FFE47A, #3D7EAA); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */    
-    
+    background-size: cover;
   }
   .book-bg {
     background-color: #af8c9d;
@@ -27,4 +24,7 @@
 background: -webkit-linear-gradient(to right, #FFFDE4, #005AA7);  /* Chrome 10-25, Safari 5.1-6 */
 background: linear-gradient(to right, #FFFDE4, #005AA7); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 height:100vh;
+  }
+  .img-resize{
+    width:30rem;
   }

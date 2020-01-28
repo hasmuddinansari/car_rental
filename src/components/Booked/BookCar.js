@@ -76,8 +76,12 @@ export class BookCar extends Component {
         const {car_model, car_company, rent_price, location, img, fuel} = this.state.car
         return (
             <>
-            <Link className="btn btn-info book-bg" to="/">Go Back</Link>
-            <div className="container-fluid p-5 row book-bg">
+            <div className=" book-bg">
+            <Link className="btn btn-dark" to="/">Go Back</Link>
+            </div>
+            <h3 className="text-center">{car_model}({car_company})</h3>
+            <div className="container-fluid book-bg">
+                <div className='p-5 row justify-content-center'>
                 <div className="col-md-6 col-12 ">
                     <img src={img} className="img-fluid img-resize"/>
                 </div>
@@ -117,7 +121,7 @@ export class BookCar extends Component {
                     <Link to={`${this.props.match.url}/${this.state.car.id}Booked`} className="btn btn-outline-danger">Get Receipt</Link> 
                 </div> :null}     
             </div>
-                
+            </div>   
             </div>
             </>
         )

@@ -23,12 +23,12 @@ const Reducer = (state=initialState, action)=>{
                 carData:[...older, newCarInfo]
             }
         case "BOOKED_TIMES":
-            var obj = {}
+            var obj = state.bookedTimesCar
                 if(obj[action.payload]==undefined){
                     obj[action.payload] = 1
                 }
                 else{
-                    obj[action.payload] = 3
+                    obj[action.payload] += 1
                 }
             return {
                 ...state,
